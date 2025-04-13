@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>For My Friend ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Floating Hearts -->
+  <div class="hearts">
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+  </div>
+
+  <!-- Glitters -->
+  <div class="glitter-container">
+    <div class="glitter-dot"></div>
+    <div class="glitter-dot"></div>
+    <div class="glitter-dot"></div>
+    <div class="glitter-dot"></div>
+    <div class="glitter-dot"></div>
+    <div class="glitter-dot"></div>
+    <div class="glitter-dot"></div>
+    <div class="glitter-dot"></div>
+    <div class="glitter-dot"></div>
+    <div class="glitter-dot"></div>
+  </div>
+
+  <div class="content">
+    <h1 id="message">Loading message...</h1>
+    <button onclick="location.href='message.html'">Click Here</button>
+  </div>
+
+  <script>
+    const messages = [
+      "You are special Dakshita❤️",
+      "You light up my world Dakshita ✨",
+      "Your smile is magic Dakshita 😄",
+      "You're one of a kind Dakshita 🌟",
+      "You make life beautiful Dakshita 🌸"
+    ];
+    document.getElementById("message").textContent =
+      messages[Math.floor(Math.random() * messages.length)];
+  </script>
+</body>
+</html>
